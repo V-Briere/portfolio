@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <div class="body-container">
@@ -22,6 +23,7 @@
         </header>
 
         <main>
+            <img src="PF_Assets/profile picture.jpeg" alt="">
             <section id="about">
                 <h2>About Me</h2>
                 <h3>Hello! I'm Victor, a passionate web developer with expertise in HTML, CSS, and JavaScript.</h3>
@@ -56,34 +58,42 @@
             <section id="contact">
                 <h2>Contact Me</h2>
                 <form id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="input-container">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Send Message</button>
+                    <div class="input-container">
+                        <label for="email"></i></label>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="input-container">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" required placeholder="message"></textarea>
+                    </div>
+                    
+                    <button class="form-btn" type="submit">Send Message</button>
                 </form>
-                <div>
+                <!-- <div>
                     <img src="PF_Assets/logo1.png" alt="Logo 1" style="width: 50px; height: 50px; margin-right: 10px;">
                     <img src="PF_Assets/logo2.png" alt="Logo 2" style="width: 50px; height: 50px; margin-right: 10px;">
                     <img src="PF_Assets/logo3.png" alt="Logo 3" style="width: 50px; height: 50px;">
-                </div>
+                </div> -->
             </section>
         </main>
-
+        <hr>
         <footer>
             <p>Follow me on social media:</p>
             <div>
                 <a href="https://twitter.com" target="_blank">Twitter</a> |
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+                <a href="https://ca.linkedin.com/in/victor-bri%C3%A8re-3a940211b?trk=public_profile_samename-profile&original_referer=https%3A%2F%2Fca.linkedin.com%2Fin%2Fvictor-briere-29082a2b0%3Ftrk%3Dpeople-guest_people_search-card" target="_blank">LinkedIn</a> |
                 <a href="https://github.com" target="_blank">GitHub</a>
             </div>
             <p>&copy; 2023 Victor's Portfolio. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>

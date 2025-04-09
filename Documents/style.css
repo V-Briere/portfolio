@@ -1,6 +1,6 @@
 :root {
     --border-radius: 80px;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --box-shadow: 8px 8px 0 rgba(103, 103, 103, 0.3);;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     margin-right: auto;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 20px;
+    padding: 20px 80px;
     font-family: Atkinson Hyperlegible, sans-serif;
 }
 
@@ -75,9 +75,9 @@ img {
     box-shadow: var(--box-shadow);
 }
 
-img:hover {
+.project-item img:hover {
    opacity: 0.8;
-    transition: opacity 0.5s ease;
+
 }
 
 .project-list {
@@ -93,6 +93,7 @@ img:hover {
 }
 .project-list img {
     margin-bottom: 2rem;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .project-btn {
@@ -107,9 +108,64 @@ img:hover {
     font-size: 1rem;
     text-align: center;
     margin-top: 3rem;
+    transition: background-color 0.3s ease-in-out;
 }
 .project-btn:hover {
     background-color: #555555;
-    transition: background-color 0.3s ease;
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-container input,
+.input-container textarea {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: #333333;
+  outline: none;
+  font-size: 1rem;
+  font-family: "victor mono", monospace;
+  padding: 10px 0 10px 20px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
+  color: white;
+  border-radius: 50px;
+}
+
+.input-container textarea {
+  height: 200px;
+  width: 80%;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: rgb(121, 121, 121);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-family: "victor mono", monospace;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    transition: background-color, color 0.3s ease-in-out;
+}
+.form-btn:hover {
+    background-color: #4d4d4d;
+    color: rgb(225, 223, 223);
+
+}
+
+footer {
+    margin-top: 3rem;
+}
+footer a {
+    display: inline;
+    margin: 0 0.5rem;
+}
