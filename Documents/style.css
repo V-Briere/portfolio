@@ -3,6 +3,8 @@
     --box-shadow: 8px 8px 0 rgba(103, 103, 103, 0.3);;
 }
 
+
+
 body {
     margin: 0;
 }
@@ -16,6 +18,10 @@ body {
     box-shadow: var(--box-shadow);
     padding: 20px 80px;
     font-family: Atkinson Hyperlegible, sans-serif;
+}
+
+.profil-pic {
+    box-shadow: var(--box-shadow);
 }
 
 a {
@@ -72,12 +78,6 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-
-.project-item img:hover {
-   opacity: 0.8;
-
 }
 
 .project-list {
@@ -201,6 +201,9 @@ footer a {
     padding: 10px;
     cursor: pointer;
     z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 .prev-btn {
@@ -209,4 +212,13 @@ footer a {
 
 .next-btn {
     right: 10px;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    background-color: #333333 !important; /* Match your input background color */
+    color: white !important; /* Ensure text color is white */
+    box-shadow: 0 0 0px 1000px #333333 inset !important; /* Prevent browser's default autofill background */
+    border: 5px solid rgba(0, 0, 0, 0.3); /* Match your input border */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -webkit-text-fill-color: white !important; /* Ensures text inside autofilled fields is white */
 }
